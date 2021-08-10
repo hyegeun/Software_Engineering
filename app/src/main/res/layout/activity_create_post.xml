@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADCDA0"
+    tools:context=".CreatePostActivity">
+
+
+    <TextView
+        android:id="@+id/createPost"
+        android:layout_width="400dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:background="#B969931A"
+        android:gravity="center_horizontal"
+        android:text="글을 써보세요!"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/createPostTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createPostTitle"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="글제목"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/createPostContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPost" />
+
+    <EditText
+        android:id="@+id/createPostContent"
+        android:layout_width="283dp"
+        android:layout_height="196dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="글내용"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_createpost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPostTitle" />
+
+    <Button
+        android:id="@+id/Btn_createpost"
+        android:layout_width="83dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/radius"
+        android:text="생성"
+        app:backgroundTint="#AB00960F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Btn_cancelpost"
+        android:layout_width="83dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/radius"
+        android:text="취소"
+        app:backgroundTint="#AB00960F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="createPost,createPostTitle,createPostContent,Btn_createpost,Btn_cancelpost" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="createPostContent,Btn_cancelpost,Btn_createpost,createPostTitle,createPost" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

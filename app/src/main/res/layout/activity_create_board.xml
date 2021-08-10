@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADCDA0">
+
+
+    <TextView
+        android:id="@+id/createBoard"
+        android:layout_width="402dp"
+        android:layout_height="52dp"
+        android:background="#B969931A"
+        android:gravity="center"
+        android:text="게시판을 생성해주세요!"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/createBoardName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createBoardName"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="게시판명"
+        android:inputType="textPersonName"
+        android:textColor="#5E4C4C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/createBoardPurpose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBoard" />
+
+    <EditText
+        android:id="@+id/createBoardPurpose"
+        android:layout_width="283dp"
+        android:layout_height="196dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="게시판 설명"
+        android:inputType="textPersonName"
+        android:textColor="#676363"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_createbd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createBoardName" />
+
+    <Button
+        android:id="@+id/Btn_createbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/radius"
+        android:text="생성"
+        app:backgroundTint="#AB00960F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Btn_cancelbd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/radius"
+        android:text="취소"
+        app:backgroundTint="#AB00960F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="createBoard,createBoardName,createBoardPurpose,Btn_createbd,Btn_cancelbd" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="createBoardPurpose,Btn_cancelbd,Btn_createbd,createBoardName,createBoard" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

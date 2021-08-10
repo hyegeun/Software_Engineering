@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="173dp"
+        android:background="#ADCDA0"
+        android:gravity="center"
+        android:text="Login Page"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="598dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ADCDA0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="4dp">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:radius="10dp"
+            android:text="Login"
+            android:layout_marginTop="10dp"
+            app:backgroundTint="#AB00960F"
+            app:cornerRadius="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

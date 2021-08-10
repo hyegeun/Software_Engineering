@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459863509921",
+    "project_id": "sogong-project",
+    "storage_bucket": "sogong-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459863509921:android:9083b3d6d19a2cc7dd59e0",
+        "android_client_info": {
+          "package_name": "com.example.sogong_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459863509921-n2iiqf808093vrb3dcmnvuqbinkmgdps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8QP8NeUthGVge3kZE1dsR5KVwpSeWmmQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459863509921-n2iiqf808093vrb3dcmnvuqbinkmgdps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

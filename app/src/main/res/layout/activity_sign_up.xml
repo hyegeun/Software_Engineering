@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ADCDA0"
+        android:gravity="center"
+        android:text="Group Management"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="539dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ADCDA0"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/passwordCheckEditText"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/radius"
+            android:gravity="center_horizontal"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            app:backgroundTint="#AB00960F " />
+
+        <Button
+            android:id="@+id/gotoLoginButton"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/radius"
+            android:gravity="center_horizontal"
+            android:text="로그인"
+            android:textColor="@color/white"
+            app:backgroundTint="#AB00960F " />
+    </LinearLayout>
+
+</LinearLayout>
